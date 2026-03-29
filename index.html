@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SEMA｜安全環境マネジメント協会 — 機能安全証明 ・ 防爆コンサル</title>
+  <meta name="description" content="SEMAは厚生労働大臣登録の機能安全適合性証明機関です。防爆コンサルティング・機能安全証明・リスクアセスメントをワンストップで提供します。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Noto+Sans+JP:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <svg class="loader-logo" viewBox="0 0 80 80" fill="none">
+        <polygon points="40,4 76,22 76,58 40,76 4,58 4,22" stroke="#38bdf8" stroke-width="1.5" fill="none"/>
+        <text x="40" y="48" text-anchor="middle" fill="#38bdf8" font-family="Syne,sans-serif" font-weight="800" font-size="18">EX</text>
+      </svg>
+      <div class="loader-bar"><div class="loader-fill" id="loaderFill"></div></div>
+      <p class="loader-text">SEMA — 安全を、科学する。</p>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="#top" class="logo">
+        <svg class="logo-hex" viewBox="0 0 44 44" fill="none">
+          <polygon points="22,2 42,12 42,32 22,42 2,32 2,12" fill="#38bdf8" opacity=".15" stroke="#38bdf8" stroke-width="1.5"/>
+          <text x="22" y="28" text-anchor="middle" fill="#38bdf8" font-family="Syne,sans-serif" font-weight="800" font-size="12">EX</text>
+        </svg>
+        <div class="logo-words">
+          <span class="logo-name">SEMA</span>
+          <span class="logo-tagline">一般社団法人 安全環境マネジメント協会</span>
+        </div>
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <a href="#about" class="nav-link">概要</a>
+        <a href="#ex-consul" class="nav-link nav-accent">防爆コンサル</a>
+        <a href="#fs" class="nav-link">機能安全</a>
+        <a href="#services" class="nav-link">サービス</a>
+        <a href="#policy" class="nav-link">方針</a>
+        <a href="#topics" class="nav-link">トピックス</a>
+        <a href="#contact" class="nav-cta">無料相談</a>
+        <a href="https://sema.or.jp/english.index.html" class="nav-lang">EN</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="メニュー">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <nav>
+      <a href="#about">概要</a>
+      <a href="#ex-consul" class="mnav-accent">★ 防爆コンサル（新規事業）</a>
+      <a href="#fs">機能安全</a>
+      <a href="#services">サービス一覧</a>
+      <a href="#policy">SEMAの方針</a>
+      <a href="#topics">トピックス</a>
+      <a href="#contact">お問い合わせ</a>
+      <a href="https://sema.or.jp/english.index.html">English HOME</a>
+    </nav>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-slides" id="heroSlides">
+      <div class="slide active" style="background-image:url('images/FunctionalSafety01.png')"></div>
+      <div class="slide" style="background-image:url('images/FunctionalSafety02.png')"></div>
+      <div class="slide" style="background-image:url('images/FunctionalSafety03.png')"></div>
+      <div class="slide" style="background-image:url('images/img4.png')"></div>
+      <div class="slide" style="background-image:url('images/img5.png')"></div>
+      <div class="slide" style="background-image:url('images/img6.png')"></div>
+      <div class="slide" style="background-image:url('images/img7.png')"></div>
+      <div class="slide" style="background-image:url('images/img8.png')"></div>
+      <div class="slide" style="background-image:url('images/img9.png')"></div>
+      <div class="slide" style="background-image:url('images/img10.png')"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <svg class="hero-geo" viewBox="0 0 700 700" fill="none" preserveAspectRatio="xMidYMid slice">
+      <circle cx="600" cy="120" r="350" stroke="rgba(56,189,248,.07)" stroke-width="1"/>
+      <circle cx="600" cy="120" r="220" stroke="rgba(56,189,248,.05)" stroke-width="1"/>
+      <circle cx="600" cy="120" r="100" stroke="rgba(56,189,248,.09)" stroke-width="1"/>
+    </svg>
+    <div class="hero-content">
+      <p class="hero-eyebrow"><span class="tag-pill">厚生労働大臣登録 機能安全証明機関 登録番号２</span></p>
+      <h1 class="hero-title">
+        <span class="line-wrap"><span class="line-inner">安全を、</span></span>
+        <span class="line-wrap sky"><span class="line-inner">科学する。</span></span>
+      </h1>
+      <p class="hero-sub">Safety Environment Management Association</p>
+      <p class="hero-desc">防爆コンサルティング × 機能安全適合性証明<br>日本政府が直接認めた第三者証明機関として<br>産業安全の最前線を支えます。</p>
+      <div class="hero-actions">
+        <a href="#ex-consul" class="btn btn-primary">防爆コンサルを見る <span class="btn-arrow">→</span></a>
+        <a href="#contact" class="btn btn-ghost">無料相談はこちら</a>
+      </div>
+    </div>
+    <div class="slide-controls">
+      <div class="slide-dots" id="slideDots"></div>
+      <div class="slide-counter"><span id="slideNum">01</span> <span class="sc-sep">/</span> 10</div>
+      <div class="slide-prog"><div class="slide-prog-bar" id="slideProgBar"></div></div>
+    </div>
+    <a href="#about" class="scroll-hint">
+      <span>Scroll</span>
+      <svg width="12" height="20" viewBox="0 0 12 20"><rect x="1" y="1" width="10" height="18" rx="5" stroke="currentColor" stroke-width="1.5" fill="none"/><circle cx="6" cy="5" r="1.5" fill="currentColor"><animate attributeName="cy" values="5;13;5" dur="2s" repeatCount="indefinite"/></circle></svg>
+    </a>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <div class="marquee-inner" aria-hidden="true">
+        <span>機能安全証明</span><span class="mdot">◆</span>
+        <span>防爆コンサル</span><span class="mdot">◆</span>
+        <span>IECEx / ATEX</span><span class="mdot">◆</span>
+        <span>JIS C 60079</span><span class="mdot">◆</span>
+        <span>SIL評価</span><span class="mdot">◆</span>
+        <span>リスクアセスメント</span><span class="mdot">◆</span>
+        <span>ゾーニング</span><span class="mdot">◆</span>
+        <span>FMEDA</span><span class="mdot">◆</span>
+        <span>IEC 61508</span><span class="mdot">◆</span>
+        <span>初回相談無料</span><span class="mdot">◆</span>
+        <span>機能安全証明</span><span class="mdot">◆</span>
+        <span>防爆コンサル</span><span class="mdot">◆</span>
+        <span>IECEx / ATEX</span><span class="mdot">◆</span>
+        <span>JIS C 60079</span><span class="mdot">◆</span>
+        <span>SIL評価</span><span class="mdot">◆</span>
+        <span>リスクアセスメント</span><span class="mdot">◆</span>
+        <span>ゾーニング</span><span class="mdot">◆</span>
+        <span>FMEDA</span><span class="mdot">◆</span>
+        <span>IEC 61508</span><span class="mdot">◆</span>
+        <span>初回カウンセリング無料（30分）</span><span class="mdot">◆</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <p class="sec-eyebrow">About SEMA</p>
+        <h2 class="sec-title">SEMA概要</h2>
+      </div>
+      <div class="about-grid">
+        <div class="glass-card about-table-card">
+          <table class="info-table">
+            <tr><th>名称</th><td>一般社団法人 安全環境マネジメント協会<br><small>Safety Environment Management Association（SEMA）</small></td></tr>
+            <tr><th>所在地</th><td>〒108–0075 東京都港区港南2–16–4<br>品川グランドセントラルタワー８F</td></tr>
+            <tr><th>連絡先</th><td><a href="mailto:sema@sema.or.jp">sema@sema.or.jp</a> / <a href="tel:0368634492">03–6863–4492</a></td></tr>
+            <tr><th>設立</th><td>2015年7月21日（営業開始：2016年1月1日）</td></tr>
+            <tr><th>代表理事</th><td>石田 豊</td></tr>
+            <tr><th>職員数</th><td>5名（2025年6月現在）</td></tr>
+            <tr><th>会員数</th><td>31名</td></tr>
+            <tr><th>設備</th><td>耐電圧試験装置・耐水試験装置・寸法測定具 等</td></tr>
+            <tr><th>取引銀行</th><td>三菱UFJ銀行 / みずほ銀行 / 三井住友銀行 / 関西みらい銀行</td></tr>
+          </table>
+          <div class="reports-row">
+            <span class="reports-label">事業報告</span>
+            <a href="https://sema.or.jp/250421_bs.pl.pdf" target="_blank" class="report-chip">2024年</a>
+            <a href="https://sema.or.jp/240605_bs.pl.pdf" target="_blank" class="report-chip">2023年</a>
+            <a href="https://sema.or.jp/230623_bs.pl.pdf" target="_blank" class="report-chip">2022年</a>
+            <a href="https://sema.or.jp/220808_bs.pl.pdf" target="_blank" class="report-chip">2021年</a>
+          </div>
+        </div>
+        <div class="about-right">
+          <div class="stats-grid">
+            <div class="stat-card"><span class="stat-num" data-target="9">0</span><span class="stat-unit">年</span><span class="stat-label">営業実績</span></div>
+            <div class="stat-card"><span class="stat-num" data-target="31">0</span><span class="stat-unit">名</span><span class="stat-label">会員数</span></div>
+            <div class="stat-card"><span class="stat-num" data-target="2">0</span><span class="stat-unit"></span><span class="stat-label">登録番号</span></div>
+            <div class="stat-card"><span class="stat-num" data-target="6">0</span><span class="stat-unit">区分</span><span class="stat-label">サービス</span></div>
+          </div>
+          <div class="glass-card position-card">
+            <p class="pos-badge">SEMAの立ち位置</p>
+            <h3>日本政府から<em>直接</em>認められた<br>機能安全証明機関</h3>
+            <p>欧州では認定機関経由の間接認定ですが、SEMAは厚生労働大臣から直接登録を受けた第三者証明機関。欧州 Notified Body と同等の立場です。</p>
+            <a href="https://sema.or.jp/certificate.MHLW.pdf" target="_blank" class="btn btn-outline-sm">登録証明書を見る →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EX CONSULTING -->
+  <section class="section ex-section" id="ex-consul">
+    <div class="ex-bg-pattern"></div>
+    <div class="container">
+      <div class="section-header">
+        <p class="sec-eyebrow new-badge">★ New Business 2026</p>
+        <h2 class="sec-title">防爆コンサルティング</h2>
+        <p class="sec-desc">初回カウンセリング無料。爆発危険箇所における安全確保の課題を、<br>設計から認証・稼働後メンテナンスまで一貫してサポートします。</p>
+      </div>
+
+      <div class="ex-banner glass-card">
+        <div class="ex-banner-left">
+          <div class="free-badge">初回相談<strong>無料</strong></div>
+          <h3>防爆対応、<br>何をしたら<br>いいかわからない<br>方へ</h3>
+          <p>設計経験ゼロでも大丈夫。お客様の状況に合わせ最適なプランをご提案します。</p>
+          <a href="#contact" class="btn btn-primary">まずは相談する →</a>
+        </div>
+        <div class="ex-banner-right">
+          <div class="ex-scope-item">
+            <span class="ex-icon">⚡</span>
+            <div><strong>防爆電気機器</strong><p>耐圧・内圧・本質安全・安全増・非点火・樹脂充填・粉じん・特殊構造の設計→工場監査→認証まで</p></div>
+          </div>
+          <div class="ex-scope-item">
+            <span class="ex-icon">⚙️</span>
+            <div><strong>防爆非電気機器</strong><p>IECEx / ATEX 対応の設計→工場監査→認証まで一貫サポート（2026年3月拡大強化）</p></div>
+          </div>
+          <div class="ex-scope-item">
+            <span class="ex-icon">🏭</span>
+            <div><strong>危険場所のゾーニング</strong><p>爆発危険区域の精緻な分類と、対応した装置の防爆化計画立案</p></div>
+          </div>
+          <div class="ex-scope-item">
+            <span class="ex-icon">🔧</span>
+            <div><strong>稼働後のメンテナンス支援</strong><p>設計製造から稼働後メンテナンスまで一貫したサービスを提供</p></div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="sub-heading">こんなお悩みに対応します</h3>
+      <div class="ex-cases-grid" id="exCasesGrid"></div>
+
+      <h3 class="sub-heading">ご相談から業務開始までの流れ</h3>
+      <div class="ex-flow" id="exFlow"></div>
+    </div>
+  </section>
+
+  <!-- FUNCTIONAL SAFETY -->
+  <section class="section fs-section" id="fs">
+    <div class="container">
+      <div class="section-header">
+        <p class="sec-eyebrow">Functional Safety</p>
+        <h2 class="sec-title">機能安全</h2>
+        <p class="sec-desc">たった2つのポイントを評価確認するだけのシンプルな証明プロセス。<br>費用は皆さんが思うほど高額ではありません。</p>
+      </div>
+      <div class="fs-grid">
+        <div class="glass-card fs-main">
+          <h3>費用が抑えられる2つのポイント</h3>
+          <div class="fs-point">
+            <div class="fs-num">①</div>
+            <div>
+              <strong>ランダムハードウェア故障（random hardware failure）</strong>
+              <p>FMEDA手法により、ランダムに発生するハードウェア故障のうち検出できない危険側故障の割合を定量的に計算・評価します。</p>
+            </div>
+          </div>
+          <div class="fs-point">
+            <div class="fs-num">②</div>
+            <div>
+              <strong>決定論的原因故障（systematic failure）</strong>
+              <p>マニュアル・手順書によるヒューマンエラー回避方策の確認。設計・製造・ソフトウェア開発における全フェーズが対象です。</p>
+            </div>
+          </div>
+        </div>
+        <div class="fs-types">
+          <h3>評価対象の3種別</h3>
+          <div class="fs-type-card glass-card">
+            <span class="fst-badge">種別 1</span>
+            <strong>製品 — ハードウェア評価</strong>
+            <p>ランダムハードウェア故障評価（FMEDA）</p>
+          </div>
+          <div class="fs-type-card glass-card">
+            <span class="fst-badge">種別 2</span>
+            <strong>製品 — ソフトウェア評価</strong>
+            <p>決定論的原因故障回避評価（Vモデル含む）</p>
+          </div>
+          <div class="fs-type-card glass-card">
+            <span class="fst-badge">種別 3</span>
+            <strong>事業者システム評価</strong>
+            <p>安全要求仕様・ハードウェア・ソフトウェア・ヒューマンエラー回避の包括評価</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="glass-card fs-steps-card">
+        <h3>機能安全アプローチ（3段階）</h3>
+        <div class="fs-approach" id="fsApproach"></div>
+      </div>
+
+      <div class="glass-card fs-standards-card">
+        <h3>対応規格一覧</h3>
+        <div class="standards-grid" id="standardsGrid"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <p class="sec-eyebrow">Our Services</p>
+        <h2 class="sec-title">SEMAの提供するサービス</h2>
+      </div>
+      <div class="services-grid" id="servicesGrid"></div>
+      <div class="text-center" style="margin-top:2.5rem">
+        <a href="https://sema.or.jp/flow.pdf" target="_blank" class="btn btn-ghost">サービス実施フローを見る →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRESIDENT -->
+  <section class="section president-section" id="president">
+    <div class="container">
+      <div class="president-grid">
+        <div class="president-visual">
+          <div class="pres-frame">
+            <img src="https://sema.or.jp/images/YutakaISHIDA_250528.JPG"
+                 alt="SEMA代表理事 石田豊"
+                 onerror="this.parentElement.style.background='linear-gradient(135deg,#0ea5e9,#0369a1)'" />
+          </div>
+          <div class="pres-caption">
+            <span>代表理事</span>
+            <strong>石田 豊</strong>
+          </div>
+        </div>
+        <div class="president-text">
+          <p class="sec-eyebrow">Message from the Director</p>
+          <h2 class="sec-title" style="font-size:clamp(1.8rem,3.2vw,2.8rem)">ごあいさつ</h2>
+          <p>産業の現場で働く人々が安全であることは、すべてに優先します。SEMAは2016年の営業開始以来、機能安全証明機関として、また防爆分野の専門家として、産業界の安全を支えてまいりました。</p>
+          <p>2026年3月には防爆コンサルティングの範囲をさらに拡大。防爆電気機器・非電気機器の設計から認証まで、危険場所ゾーニング・稼働後メンテナンスまで、一貫したサービスを提供できるようになりました。</p>
+          <p>「<em>憧れるのをやめましょう。</em>」― 日本政府が直接認めた機能安全証明機関として、欧州の機関と同等の立場で皆さまの製品の安全性を証明します。まずはメールでお気軽にご相談ください。</p>
+          <a href="#contact" class="btn btn-primary" style="margin-top:1.5rem">代表に直接相談する →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POLICY -->
+  <section class="section" id="policy">
+    <div class="container">
+      <div class="section-header">
+        <p class="sec-eyebrow">Our Policy</p>
+        <h2 class="sec-title">SEMAの方針</h2>
+      </div>
+      <div class="policy-grid" id="policyGrid"></div>
+      <div class="glass-card privacy-card" style="margin-top:2rem">
+        <h3>情報保護方針</h3>
+        <p>SEMAはお預かりした情報への不正アクセス・紛失・破損・改ざん・漏洩を防止するため、万全のセキュリティ対策を講じています。業務完了日から1年経過後、責任をもって廃棄します（連絡先情報・納品物コピーを除く）。</p>
+        <p>提供いただいた情報は、SEMAからのご連絡、および試験・評価・認証業務にのみ利用し、ご同意なく第三者に開示することはありません。詳細は<a href="#contact">お問い合わせ</a>ください。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOPICS -->
+  <section class="section" id="topics">
+    <div class="container">
+      <div class="section-header">
+        <p class="sec-eyebrow">Latest News</p>
+        <h2 class="sec-title">トピックス</h2>
+      </div>
+      <div class="topics-list" id="topicsList"></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact-section" id="contact">
+    <div class="contact-bg"></div>
+    <div class="container">
+      <div class="section-header">
+        <p class="sec-eyebrow">Contact Us</p>
+        <h2 class="sec-title">お問い合わせ</h2>
+        <p class="sec-desc">初回のご相談（メール・電話・オンライン）は<strong>無料</strong>です。</p>
+      </div>
+      <div class="contact-grid">
+        <div class="glass-card contact-info">
+          <h3>直接ご連絡ください</h3>
+          <p>以下の情報を添えてメールをお送りください：<br>①お名前 ②組織名 ③電話番号 ④困りごと</p>
+          <a href="mailto:sema@sema.or.jp?subject=HPからのお問い合わせ" class="contact-btn mail-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            sema@sema.or.jp
+          </a>
+          <a href="tel:0368634492" class="contact-btn tel-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.0 1.19 2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14v2.92z"/></svg>
+            03–6863–4492（平日 9:00〜17:30）
+          </a>
+          <div class="seminar-box">
+            <p class="seminar-label">初心者向けセミナー</p>
+            <p>防爆を取り入れたい企業様向けに、貴社に赴きセミナーを開催します（貴社の状況にあわせたテキストを作成・配布）。</p>
+          </div>
+        </div>
+        <form class="glass-card contact-form" id="contactForm">
+          <h3>フォームから送信</h3>
+          <div class="fg">
+            <label>お名前 <span class="req">*</span></label>
+            <input type="text" name="name" required placeholder="山田 太郎" />
+          </div>
+          <div class="fg">
+            <label>組織名 <span class="req">*</span></label>
+            <input type="text" name="org" required placeholder="〇〇株式会社" />
+          </div>
+          <div class="form-row2">
+            <div class="fg">
+              <label>メール <span class="req">*</span></label>
+              <input type="email" name="email" required placeholder="you@example.com" />
+            </div>
+            <div class="fg">
+              <label>電話番号</label>
+              <input type="tel" name="tel" placeholder="03-0000-0000" />
+            </div>
+          </div>
+          <div class="fg">
+            <label>お問い合わせ種別</label>
+            <select name="type">
+              <option value="">選択してください</option>
+              <option>防爆コンサルティング</option>
+              <option>機能安全証明</option>
+              <option>リスクアセスメント</option>
+              <option>セミナー依頼</option>
+              <option>その他</option>
+            </select>
+          </div>
+          <div class="fg">
+            <label>内容 <span class="req">*</span></label>
+            <textarea name="message" rows="5" required placeholder="困りごとを簡潔にお書きください"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%">送信する</button>
+          <p style="font-size:.75rem;color:var(--muted);margin-top:.75rem">※情報保護方針に基づき適切に管理します</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#top" class="logo">
+          <svg class="logo-hex" viewBox="0 0 44 44" fill="none">
+            <polygon points="22,2 42,12 42,32 22,42 2,32 2,12" fill="#38bdf8" opacity=".15" stroke="#38bdf8" stroke-width="1.5"/>
+            <text x="22" y="28" text-anchor="middle" fill="#38bdf8" font-family="Syne,sans-serif" font-weight="800" font-size="12">EX</text>
+          </svg>
+          <div class="logo-words">
+            <span class="logo-name">SEMA</span>
+            <span class="logo-tagline">安全環境マネジメント協会</span>
+          </div>
+        </a>
+        <p class="footer-reg">機能安全登録適合性証明機関 登録番号２<br>厚生労働大臣登録（2017年5月17日）</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <p>サービス</p>
+          <a href="#ex-consul">防爆コンサルティング</a>
+          <a href="#fs">機能安全証明</a>
+          <a href="#services">サービス一覧</a>
+        </div>
+        <div class="footer-col">
+          <p>SEMA</p>
+          <a href="#about">概要</a>
+          <a href="#president">代表理事</a>
+          <a href="#policy">方針・情報保護</a>
+          <a href="https://sema.or.jp/certificate.MHLW.pdf" target="_blank">登録証明書</a>
+        </div>
+        <div class="footer-col">
+          <p>Contact</p>
+          <a href="mailto:sema@sema.or.jp">sema@sema.or.jp</a>
+          <a href="tel:0368634492">03–6863–4492</a>
+          <a href="https://sema.or.jp/english.index.html">English HOME</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright &copy; 2018–2026 Safety Environment Management Association. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-top" id="backTop" aria-label="トップへ">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
